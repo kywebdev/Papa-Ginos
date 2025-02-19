@@ -1,0 +1,137 @@
+html {
+    .accordion {
+        box-shadow: 6px 6px 10px rgba($black, .2);
+        border-radius: 35px;
+        overflow: hidden;
+    }
+    .accordion-item {
+        border: none;
+        border-bottom: 1px solid #D8D8D8;
+
+        &:first-of-type {
+            border-top-left-radius: 35px;
+            border-top-right-radius: 35px;
+
+            .accordion-button {
+                border-top-left-radius: 35px;
+                border-top-right-radius: 35px;
+            }
+        }
+        &:last-of-type {
+            border-bottom-left-radius: 35px;
+            border-bottom-right-radius: 35px;
+            border-bottom: none;
+
+            .accordion-button {
+                &.collapsed {
+                    border-bottom-left-radius: 35px;
+                    border-bottom-right-radius: 35px;
+                }
+            }
+            .accordion-collapse {
+                border-bottom-left-radius: 35px;
+                border-bottom-right-radius: 35px;
+                overflow: hidden;
+            }
+        }
+    }
+    .accordion-button {
+        padding: 40px 130px 40px 90px;
+        font-family: $bureau;
+        font-size: 28px;
+        line-height: 35px;
+        letter-spacing: -1px;
+        overflow: hidden;
+        transition: .4s ease-in-out;
+
+        @media screen and (max-width: 1500px) {
+            padding: 40px 110px 40px 50px;
+        }
+        @media screen and (max-width: $md) {
+            padding: 25px 110px 25px 40px;
+            font-size: 24px;
+            line-height: 30px;
+        }
+        @media screen and (max-width: $sm) {
+            padding: 25px 90px 25px 30px;
+            font-size: 22px;
+            line-height: 26px;
+        }
+        &:before {
+            content: '';
+            width: 13px;
+            height: 100%;
+            background-color: $red;
+            display: block;
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            opacity: 0;
+            transition: .4s ease-in-out;
+
+            @media screen and (max-width: $sm) {
+                width: 4px;
+            }
+        }
+        &:after {
+            width: 48px;
+            height: 48px;
+            background-image: url('../img/accordion-arrow.svg') !important;
+            background-size: cover;
+            position: absolute;
+            top: 34px;
+            right: 60px;
+            transition: .3s ease-in-out;
+
+            @media screen and (max-width: 1500px) {
+                right: 30px;
+            }
+            @media screen and (max-width: $md) {
+                top: 20px;
+                width: 40px;
+                height: 40px;
+            }
+        }
+        &:hover {
+            z-index: unset;
+        }
+        &:focus {
+            box-shadow: none;
+            z-index: unset;
+        }
+        &:not(.collapsed) {
+            color: $red;
+            background-color: #F8F7F8;
+            box-shadow: none;
+            margin-bottom: -20px;
+            position: relative;
+
+            @media screen and (max-width: $md) {
+                margin-bottom: -10px;
+            }
+            &:before {
+                opacity: 1;
+            }
+        }
+    }
+    .accordion-collapse {
+        position: relative;
+
+        .accordion-body {
+            background-color: #F8F7F8;
+            padding: 0px 150px calc(40px - 1rem) 77px;
+            border-left: 13px solid $red;
+
+            @media screen and (max-width: 1500px) {
+                padding: 0px 110px calc(40px - 1rem) 37px;
+            }
+            @media screen and (max-width: $md) {
+                padding: 0px 30px calc(20px - 1rem) 27px;
+            }
+            @media screen and (max-width: $sm) {
+                padding: 0px 30px calc(20px - 1rem) 23px;
+                border-left: 4px solid $red;
+            }
+        }
+    }
+}

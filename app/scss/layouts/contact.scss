@@ -1,0 +1,206 @@
+html {
+    body:not(.home) {
+        &.contact {
+            .hero {
+                .row {
+                    @media screen and (max-width: $md) {
+                        margin-bottom: 20px;
+                    }
+                }
+                .col-md-6 {
+                    .hero__images {
+                        &__img {   
+                            @media screen and (max-width: $md) {
+                                margin-top: 40px;
+                            }
+                            @media screen and (max-width: $sm) {
+                                margin-top: 20px;
+                            }
+                        }
+                    }
+                }
+            }
+            .contact-info {
+                padding-bottom: 10vw;
+                position: relative;
+                
+                @media screen and (max-width: $xl) {
+                    padding-bottom: 15vw;
+                }
+                @media screen and (max-width: $md) {
+                    padding-bottom: 28.683vw;
+                }
+                &:before {
+                    content: '';
+                    width: 506px;
+                    height: 560px;
+                    background-image: url('../img/pg-3.svg');
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                    position: absolute;
+                    bottom: 15.625vw;
+                    left: 0px;
+                    z-index: -1;
+
+                    @media screen and (max-width: $xl) {
+                        display: none;
+                    }
+                    @media screen and (max-width: $md) {
+                        background-image: url('../img/new-england-2-mobile.svg');
+                        width: 291px;
+                        height: 548px;
+                        top: -325px;
+                        bottom: auto;
+                        display: block;
+                    }
+                }
+                &:after {
+                    content: '';
+                    width: 100%;
+                    height: 16.384vw;
+                    background-image: url('../img/order-callout-bg.svg');
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                    position: absolute;
+                    bottom: -1.339vw;
+                    left: 0;
+                    z-index: -1;
+
+                    @media screen and (max-width: $md) {
+                        background-image: url('../img/menu-bg-2-mobile.svg');
+                        height: 22.034vw;
+                        bottom: 0px;
+                    }
+                }
+                .row {
+                    @media screen and (max-width: $xl) {
+                        flex-direction: column-reverse;
+                    }
+                }
+                .col-xl-7 {
+                    padding-left: 130px;
+                    position: relative;
+
+                    @media screen and (max-width: 1500px) {
+                        padding-left: 50px;
+                    }
+                    @media screen and (max-width: $xl) {
+                        padding-left: 12px;
+                        margin-top: 150px;
+                    }
+                    @media screen and (max-width: $md) {
+                        padding: 0px;
+                        margin-top: 0px;
+                    }
+                }
+                &__boxes {
+                    @media screen and (max-width: $xl) {
+                        display: flex;
+                        margin-top: 70px;
+                    }
+                    @media screen and (max-width: $md) {
+                        display: block;
+                        padding: 0px;
+                    }
+                    @media screen and (max-width: $sm) {
+                        margin-top: 50px;
+                    }
+                    &__box {
+                        background-color: #F8F7F8;
+                        padding: 70px 70px 45px;
+                        box-shadow: 6px 6px 10px rgba($black, .1);
+                        margin-bottom: 30px;
+
+                        @media screen and (max-width: $xl) {
+                            width: 50%;
+                            margin-right: 30px;
+                        }
+                        @media screen and (max-width: $lg) {
+                            padding: 40px 40px 20px;
+                        }
+                        @media screen and (max-width: $md) {
+                            width: 100%;
+                            margin-right: 0px;
+                        }
+                        &:nth-of-type(even) {
+                            @media screen and (max-width: $xl) {
+                                margin-right: 0px;
+                            }
+                        }
+                        h2 {
+                            @extend h3;
+                            color: $red;
+                            margin-bottom: 25px;
+                        }
+                        p {
+                            font-size: 22px;
+                            line-height: 32px;
+                            font-weight: 400;
+                            letter-spacing: -.43px;
+                            margin-bottom: 25px;
+
+                            @media screen and (max-width: $lg) {
+                                font-size: 18px;
+                                line-height: 28px;
+                                margin-bottom: 20px;
+                            }
+                            @media screen and (max-width: $sm) {
+                                font-size: 16px;
+                                line-height: 24px;
+                            }
+                        }
+                        a {
+                            color: $gray;
+                        }
+                    }
+                }
+                &__caption {
+                    position: absolute;
+                    top: -120px;
+                    right: 0px;
+
+                    @media screen and (max-width: $md) {
+                        display: none;
+                    }
+                    .caption {
+                        display: inline-block;
+                        text-align: center;
+                        padding-left: 86px;
+
+                        &:before {
+                            content: '';
+                            display: inline-block;
+                            width: 66px;
+                            height: 66px;
+                            background-image: url('../img/arrow-8.svg');
+                            background-size: cover;
+                            background-repeat: no-repeat;
+                            position: absolute;
+                            top: 35px;
+                            left: 0px;
+                        }
+                    }
+                }
+                &__form {
+                    h2 {
+                        @extend h3;
+                        color: $red;
+                        margin-bottom: 25px;
+                    }
+                    form {
+                        .message {
+                            font-size: 14px;
+                            line-height: 18px;
+                            font-weight: bold;
+                            margin-bottom: 10px;
+
+                            span {
+                                color: $red;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

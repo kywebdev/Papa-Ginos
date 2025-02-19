@@ -1,0 +1,34 @@
+html {
+    body:not(.home) {
+        &.kids {
+            .hero {
+                .row {
+                    @media screen and (max-width: $md) {
+                        padding-bottom: 22.034vw;
+                        margin-bottom: 40px;
+                    }
+                    &:after {
+                        content: '';
+                        width: 100%;
+                        height: 22.034vw;
+                        background-image: url('../img/offers-bg-mobile.svg');
+                        background-size: cover;
+                        background-repeat: no-repeat;
+                        position: absolute;
+                        bottom: 0px;
+                        left: 0px;
+                        z-index: -1;
+                        display: none;
+    
+                        @media screen and (max-width: $md) {
+                            display: block;
+                        }
+                    }
+                }
+                &__stripe {
+                    border-bottom: 1px solid $white;
+                }
+            }
+        }
+    }
+}

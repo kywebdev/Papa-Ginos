@@ -1,0 +1,417 @@
+html {
+    body:not(.home) {
+        &.virtual-bgs {
+            overflow-x: hidden;
+            
+            .bgs {
+                padding: 10.714vw 0px 100px;
+                position: relative;
+
+                @media screen and (max-width: 1400px) {
+                    padding-bottom: 50px;
+                }
+                @media screen and (max-width: $lg) {
+                    padding-bottom: 0px;
+                }
+                @media screen and (max-width: $md) {
+                    padding-top: 0px;
+                    padding-bottom: 100px;
+                }
+                &:before {
+                    content: '';
+                    width: 100%;
+                    height: 22.857vw;
+                    background-image: url('../img/catering-bg.svg');
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                    position: absolute;
+                    top: -3.616vw;
+                    left: 0px;
+                    z-index: -1;
+
+                    @media screen and (max-width: $md) {
+                        background-image: url('../img/catering-mobile.svg');
+                        height: 26.336vw;
+                        top: -8.475vw;
+                    }
+                }
+                .container {
+                    max-width: 1300px;
+                }
+                .bg-section {
+                    margin-bottom: 150px;
+                    position: relative;
+                    
+                    @media screen and (max-width: $md) {
+                        margin-bottom: 100px;
+                    }
+                    @media screen and (max-width: $sm) {
+                        margin-bottom: 80px;
+                    }
+                    &:nth-of-type(odd) {
+                        .col-md-7 {
+                            justify-content: flex-end;
+                        }
+                        .bg-section__img {
+                            transform: rotate(8deg);
+
+                            @media screen and (max-width: $md) {
+                                transform: rotate(2deg);
+                            }
+                        }
+                    }
+                    &:nth-of-type(even) {
+                        .row {
+                            display: flex;
+                            flex-wrap: wrap;
+                            flex-direction: row-reverse;
+
+                            @media screen and (max-width: $md) {
+                                flex-direction: column-reverse;
+                            }
+                        }
+                        .bg-section__img {
+                            transform: rotate(-5deg);
+
+                            @media screen and (max-width: $md) {
+                                transform: rotate(-2deg);
+                            }
+                        }
+                    }
+                    &.new-england {
+                        &.--left {
+                            &:after {
+                                content: '';
+                                width: 627px;
+                                height: 941px;
+                                background-image: url('../img/new-england-3.svg');
+                                background-repeat: no-repeat;
+                                background-size: cover;
+                                position: absolute;
+                                top: 0px;
+                                left: 0px;
+                                z-index: -2;
+            
+                                @media screen and (max-width: $lg) {
+                                    background-image: url('../img/new-england-2-mobile.svg');
+                                    width: 291px;
+                                    height: 548px;
+                                    top: 0px;
+                                }
+                                @media screen and (max-width: $md) {
+                                    top: -150px;
+                                }
+                            }
+                        }
+                        &.--right {
+                            &:after {
+                                content: '';
+                                width: 588px;
+                                height: 1062px;
+                                background-image: url('../img/new-england-1.svg');
+                                background-size: cover;
+                                background-repeat: no-repeat;
+                                position: absolute;
+                                top: 0px;
+                                right: 0px;
+                                z-index: -2;
+            
+                                @media screen and (max-width: $lg) {
+                                    width: 310px;
+                                    height: 616px;
+                                    background-image: url('../img/new-england-1-mobile.svg');
+                                    right: -17px;
+                                }
+                                @media screen and (max-width: $md) {
+                                    top: -100px;
+                                }
+                            }
+                        }
+                    }
+                    &.pg {
+                        &.--left {
+                            &:after {
+                                content: '';
+                                width: 466px;
+                                height: 516px;
+                                background-image: url('../img/pg-3.svg');
+                                background-repeat: no-repeat;
+                                background-size: cover;
+                                position: absolute;
+                                top: -253px;
+                                left: 0;
+                                z-index: -2;
+
+                                @media screen and (max-width: $lg) {
+                                    width: 295px;
+                                    height: 327px;
+                                    top: auto;
+                                    bottom: -200px;
+                                }
+                                @media screen and (max-width: $md) {
+                                    bottom: -100px;
+                                }
+                            }
+                        }
+                        &.--right {
+                            &:after {
+                                content: '';
+                                width: 466px;
+                                height: 506px;
+                                background-image: url('../img/pg.svg');
+                                background-repeat: no-repeat;
+                                background-size: cover;
+                                position: absolute;
+                                top: -253px;
+                                right: 0;
+                                z-index: -2;
+
+                                @media screen and (max-width: $lg) {
+                                    background-image: url('../img/pg-mobile.svg');
+                                    width: 260px;
+                                    height: 327px;
+                                    top: auto;
+                                    bottom: -200px;
+                                    right: 0px;
+                                }
+                                @media screen and (max-width: $md) {
+                                    bottom: -150px;
+                                }
+                            }
+                        }
+                    }
+                    .row {
+                        margin-left: -100px;
+                        margin-right: -100px;
+                        width: calc(100% + 200px);
+
+                        @media screen and (max-width: $xl) {
+                            margin-left: -5%;
+                            margin-right: -5%;
+                            width: 110%;
+                        }
+                        @media screen and (max-width: $md) {
+                            flex-direction: column-reverse;
+                        }
+                    }
+                    .col-lg-5, .col-lg-7 {
+                        display: flex;
+                        flex-wrap: wrap;
+                        align-items: center;
+                        padding-left: 100px;
+                        padding-right: 100px;
+
+                        @media screen and (max-width: $xl) {
+                            padding-left: 5%;
+                            padding-right: 5%;
+                        }
+                    }
+                    &__text {
+                        width: 100%;
+                        
+                        h2 {
+                            margin-bottom: 15px;
+
+                            @media screen and (max-width: 1400px) {
+                                font-size: 5.357vw;
+                                letter-spacing: -0.228vw;
+                                margin-bottom: 1.071vw;
+                            }
+                            @media screen and (max-width: $md) {
+                                font-size: 45px;
+                                letter-spacing: -1.92px;
+                                margin-bottom: 15px;
+                            }
+                        }
+                        &__desc {
+                            max-width: 400px;
+                            margin-bottom: 30px;
+
+                            @media screen and (max-width: $md) {
+                                max-width: none;
+                            }
+                        }
+                    }
+                    &__img {
+                        background-color: #F1F0F2;
+                        padding: 15px;
+                        box-shadow: 6px 6px 10px rgba($black, .2);
+                        max-width: 647px;
+
+                        @media screen and (max-width: $md) {
+                            margin-bottom: 50px;
+                            padding: 10px;
+                        }
+                        @media screen and (max-width: $sm) {
+                            margin-bottom: 40px;
+                        }
+                        &.sparkle {
+                            &:after {
+                                content: '';
+                                width: 2.857vw;
+                                height: 2.679vw;
+                                background-image: url('../img/glow.svg');
+                                background-size: cover;
+                                background-repeat: no-repeat;
+                                position: absolute;
+
+                                @media screen and (max-width: $md) {
+                                    display: none;
+                                }
+                            }
+                        }
+                        &.--top-left {
+                            &:after {
+                                top: -2.009vw;
+                                left: -2.232vw;
+                                transform: scale(-1, 1);
+                            }
+                        }
+                        &.--top-right {
+                            &:after {
+                                top: -1.786vw;
+                                right: -2.232vw;
+                            }
+                        }
+                        &.--bottom-left {
+                            &:after {
+                                bottom: -2.009vw;
+                                left: -2.232vw;
+                                transform: scale(-1, -1);
+                            }
+                        }
+                        &.--bottom-right {
+                            &:after {
+                                bottom: -2.009vw;
+                                right: -2.232vw;
+                                transform: scale(1, -1);
+                            }
+                        }
+                        img {
+                            width: 100%;
+                        }
+                    }
+                }
+            }
+            .order-callout {
+                padding-bottom: 14.732vw;
+                position: relative;
+                
+                @media screen and (max-width: $md) {
+                    padding-bottom: 28.683vw;
+                    padding-top: 100px;
+                }
+                @media screen and (max-width: $sm) {
+                    padding-top: 60px;
+                }
+                &:after {
+                    content: '';
+                    width: 100%;
+                    height: 16.384vw;
+                    background-image: url('../img/order-callout-bg.svg');
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                    position: absolute;
+                    bottom: -1.339vw;
+                    left: 0px;
+                    z-index: -1;
+
+                    @media screen and (max-width: $md) {
+                        background-image: url('../img/menu-bg-2-mobile.svg');
+                        height: 22.034vw;
+                        bottom: 0px;
+                    }
+                }
+                .container {
+                    max-width: 1370px;
+                }
+                &__container {
+                    background-color: #F8F7F8;
+                    box-shadow: 6px 6px 10px rgba($black, .1);
+                    padding: 80px 70px 70px 460px;
+                    position: relative;
+
+                    @media screen and (max-width: 1920px) {
+                        padding-left: 23.958vw;
+                    }
+                    @media screen and (max-width: $xl) {
+                        padding-top: 60px;
+                        padding-bottom: 50px;
+                        padding-left: 21vw;
+                    }
+                    @media screen and (max-width: $lg) {
+                        padding-left: 27vw;
+                    }
+                    @media screen and (max-width: $md) {
+                        padding: 0px 30px 40px;
+                    }
+                    @media screen and (max-width: $sm) {
+                        padding: 0px 15px 40px;
+                    }
+                }
+                &__img {
+                    position: absolute;
+                    top: 50%;
+                    left: -60px;
+                    background-color: #F1F0F2;
+                    padding: 15px;
+                    box-shadow: 6px 6px 10px rgba($black, .2);
+                    width: 458px;
+                    transform: translate(0%, -50%) rotate(-10deg);
+
+                    @media screen and (max-width: 1920px) {
+                        width: 23.854vw;
+                    }
+                    @media screen and (max-width: $lg) {
+                        width: 30vw;
+                    }
+                    @media screen and (max-width: $md) {
+                        width: 90%;
+                        max-width: 300px;
+                        transform: translate(0%, -50%) rotate(-10deg);
+                        position: relative;
+                        top: auto;
+                        left: 0px;
+                        margin: 0px auto -80px;
+                    }
+                    &:after {
+                        content: '';
+                        width: 2.857vw;
+                        height: 2.679vw;
+                        background-image: url('../img/glow.svg');
+                        background-size: cover;
+                        background-repeat: no-repeat;
+                        position: absolute;
+                        top: -2.009vw;
+                        left: -2.232vw;
+                        transform: rotate(-90deg);
+
+                        @media screen and (max-width: $md) {
+                            display: none;
+                        }
+                    }
+                    img {
+                        width: 100%;
+                    }
+                }
+                &__text {
+                    text-align: center;
+
+                    h2 {
+                        margin-bottom: 30px;
+
+                        @media screen and (max-width: $xl) {
+                            font-size: 55px;
+                        }
+                        @media screen and (max-width: $lg) {
+                            margin-bottom: 20px;
+                        }
+                        @media screen and (max-width: $md) {
+                            font-size: 45px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

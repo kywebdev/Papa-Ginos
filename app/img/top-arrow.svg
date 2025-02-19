@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="27px" height="33px" viewBox="0 0 27 33" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Group</title>
+    <g id="Desktop" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round">
+        <g id="menu_pizza" transform="translate(-1851.000000, -2423.000000)" stroke="#FFFFFF">
+            <g id="order" transform="translate(1829.000000, 2404.000000)">
+                <g id="Group" transform="translate(35.262118, 35.581061) scale(1, -1) rotate(265.000000) translate(-35.262118, -35.581061) translate(21.000000, 24.000000)">
+                    <path d="M3.60730601,11.135711 C-8.35285405,7.70918074 17.5880785,14.5812229 28.5242351,12.8925804" id="Path-2" stroke-width="4"></path>
+                    <path d="M2.02450805,9.13787736 C12.908229,0.974219745 17.0648641,-1.71946084 14.4944135,1.0568356 C11.4076682,4.39077247 -5.81034449,11.2896527 2.02450805,9.13787736 Z" id="Path-3" stroke-width="3"></path>
+                    <line x1="1.5222298" y1="12.1621228" x2="13.521944" y2="23.1205503" id="Path-4" stroke-width="3.5"></line>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,67 @@
+// ----------------------  SITE COLORS  ----------------------
+
+$red:           #B12028;
+$gray:          #414042;
+$black:         #000000;
+$white:         #ffffff;
+
+
+// ----------------------  TYPEFACES  ----------------------
+
+// google fonts or typekit import
+@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@300;400;500;700&display=swap');
+
+// webfonts
+@font-face {
+    font-family: 'Bureau Eagle';
+    src: url('../fonts/BureauEagleFBBook.eot');
+    src: url('../fonts/BureauEagleFBBook.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/BureauEagleFBBook.woff2') format('woff2'),
+        url('../fonts/BureauEagleFBBook.woff') format('woff'),
+        url('../fonts/BureauEagleFBBook.ttf') format('truetype'),
+        url('../fonts/BureauEagleFBBook.svg#BureauEagle') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Bureau Eagle';
+    src: url('../fonts/BureauEagleBold.eot');
+    src: url('../fonts/BureauEagleBold.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/BureauEagleBold.woff2') format('woff2'),
+        url('../fonts/BureauEagleBold.woff') format('woff'),
+        url('../fonts/BureauEagleBold.ttf') format('truetype'),
+        url('../fonts/BureauEagleBold.svg#BureauEagle') format('svg');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Boombox';
+    src: url('../fonts/Boombox.eot');
+    src: url('../fonts/Boombox.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Boombox.woff2') format('woff2'),
+        url('../fonts/Boombox.woff') format('woff'),
+        url('../fonts/Boombox.ttf') format('truetype'),
+        url('../fonts/Boombox.svg#Boombox') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+$boombox:       'Boombox', sans-serif;
+$bureau:        'Bureau Eagle', sans-serif;
+$lexend:        'Lexend', sans-serif;
+
+
+// ----------------------  BREAKPOINTS  ----------------------
+
+$x-large:   1199px;
+$large:     991px;
+$medium:    767px;
+$small:     575px;
+
+$xl: $x-large;
+$lg: $large;
+$md: $medium;
+$sm: $small;

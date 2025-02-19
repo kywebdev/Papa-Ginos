@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="48px" height="48px" viewBox="0 0 48 48" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Group 2 Copy 2</title>
+    <g id="Desktop" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="giving-back" transform="translate(-1118.000000, -2721.000000)">
+            <g id="Group-2-Copy-2" transform="translate(1142.000000, 2745.000000) rotate(-180.000000) translate(-1142.000000, -2745.000000) translate(1118.000000, 2721.000000)">
+                <circle id="Oval" fill="#B12028" cx="24" cy="24" r="24"></circle>
+                <g id="Group" transform="translate(23.878891, 23.223108) scale(1, -1) rotate(265.000000) translate(-23.878891, -23.223108) translate(15.954973, 16.999426)" stroke="#FFFFFF" stroke-linecap="round">
+                    <path d="M1.83206329,5.70880139 C-4.89552674,3.99553628 9.69624781,7.43155738 15.8478359,6.5872361" id="Path-2" stroke-width="3"></path>
+                    <path d="M1.09658836,5.02558112 C6.99182877,0.535794054 9.24329808,-0.945656153 7.85099628,0.581230501 C6.17903999,2.41480405 -3.14721206,6.20899836 1.09658836,5.02558112 Z" id="Path-3" stroke-width="2"></path>
+                    <line x1="1.28241777" y1="6.44736442" x2="8.03225704" y2="12.4246885" id="Path-4" stroke-width="2.5"></line>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

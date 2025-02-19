@@ -1,0 +1,682 @@
+html {
+    header {
+        background-color: $white;
+        width: 100%;
+        position: fixed;
+        top: 0px;
+        left: 0px;
+        z-index: 9999;
+
+        @media screen and (max-width: 1300px) {
+            background-color: $red;
+            cursor: url('../img/pizza-white.svg'), default;
+            height: 100px;
+            overflow: hidden;
+            transition: 1s ease;
+        }
+        .header-container {
+            display: block;
+
+            @media screen and (max-width: 1300px) {
+                display: flex;
+                flex-direction: column;
+                height: 100vh;
+            }
+        }
+        .secondary-header {
+            background-color: $red;
+            padding: 5px 80px;
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            width: 100%;
+
+            @media screen and (max-width: 1770px) {
+                padding: 5px 30px;
+            }
+            @media screen and (max-width: 1300px) {
+                justify-content: center;
+                flex-wrap: wrap;
+                padding: 0px 30px;
+                order: 2;
+            }
+            nav {
+                display: flex;
+
+                @media screen and (max-width: 1300px) {
+                    width: 100%;
+                    justify-content: center;
+                    border-top: 1px solid $white;
+                    padding: 40px 0px 25px;
+                }
+                ul {
+                    margin: 0px;
+                    padding: 0px;
+
+                    li {
+                        list-style-type: none;
+                        display: inline-block;
+                        margin-right: 40px;
+
+                        @media screen and (max-width: 1300px) {
+                            margin-right: 30px;
+                        }
+                        @media screen and (max-width: $sm) {
+                            margin-right: 20px;
+                        }
+                        &:last-of-type {
+                            margin-right: 0px;
+                        }
+                        a {
+                            font-size: 13px;
+                            line-height: 18px;
+                            font-weight: 500;
+                            text-transform: uppercase;
+                            text-decoration: none;
+                            color: $white;
+                        }
+                    }
+                }
+            }
+            .download-app {
+                display: flex;
+                align-items: center;
+                margin-left: 30px;
+                padding-left: 31px;
+                position: relative;
+
+                @media screen and (max-width: 1300px) {
+                    width: 100%;
+                    justify-content: center;
+                    margin-left: 0px;
+                    margin-bottom: 35px;
+                    padding-left: 0px;
+                }
+                &:before {
+                    content: '';
+                    width: 1px;
+                    height: 18px;
+                    background-color: $white;
+                    position: absolute;
+                    top: 50%;
+                    left: 0px;
+                    transform: translateY(-50%);
+
+                    @media screen and (max-width: 1300px) {
+                        display: none;
+                    }
+                }
+                p {
+                    font-size: 14px;
+                    line-height: 18px;
+                    color: $white;
+                    margin-bottom: 0px;
+                    margin-right: 30px;
+
+                    @media screen and (max-width: 1300px) {
+                        margin-right: 20px;
+                    }
+                }
+                a {
+                    display: block;
+                    margin-right: 10px;
+                    
+                    @media screen and (max-width: 1300px) {
+                        margin-right: 15px;
+                    }
+                    &:last-of-type {
+                        margin-right: 0px;
+                    }
+                }
+            }
+            .social {
+                display: none;
+                padding-bottom: 40px;
+
+                @media screen and (max-width: 1300px) {
+                    display: block;
+                }
+                ul {
+                    margin: 0px;
+                    padding: 0px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: flex-end;
+
+                    li {
+                        list-style-type: none;
+                        display: inline-block;
+                        margin-left: 30px;
+
+                        &:first-of-type {
+                            margin-left: 0px;
+                        }
+                        a {
+                            width: 30px;
+                            height: 30px;
+                            background-color: $white;
+                            border-radius: 50%;
+                            position: relative;
+                            display: block;
+
+                            &:hover {
+                                transform: scale(1.2);
+                            }
+                            span {
+                                position: absolute;
+                                top: 50%;
+                                left: 50%;
+                                transform: translate(-50%, -50%);
+                                color: $red;
+                                font-size: 18px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .primary-header {
+            padding: 30px 80px 0px;
+            display: flex;
+            flex-wrap: wrap;
+            height: 158px;
+
+            @media screen and (max-width: 1770px) {
+                padding: 30px 30px 0px;
+            }
+            @media screen and (max-width: 1300px) {
+                display: block;
+                height: auto;
+                padding: 25px 30px 0px;
+                order: 1;
+                position: relative;
+            }
+            .logo {
+                padding: 0px 60px;
+                width: 530px;
+                height: 97px;
+                display: flex;
+                align-items: center;
+
+                @media screen and (max-width: 1930px) {
+                    width: 25.907vw;
+                    padding: 0px 3.109vw;
+                }
+                @media screen and (max-width: 1770px) {
+                    width: 17.797vw;
+                    padding: 0px 0.847vw 0px 0px;
+                }
+                @media screen and (max-width: 1300px) {
+                    width: 208px;
+                    height: 49px;
+                    padding: 0px;
+                }
+                a {
+                    width: 410px;
+                    display: block;
+
+                    @media screen and (max-width: 1930px) {
+                        width: 21.244vw;
+                    }
+                    @media screen and (max-width: 1770px) {
+                        width: 16.949vw;
+                    }
+                    @media screen and (max-width: 1300px) {
+                        width: 208px;
+                        height: 49px;
+                        background-image: url('../img/logo-white.svg');
+                        background-size: cover;
+                        background-repeat: no-repeat;
+                    }
+                    img {
+                        width: 100%;
+
+                        @media screen and (max-width: 1300px) {
+                            display: none;
+                        }
+                    }
+                }
+            }
+            .mobile-nav-toggle {
+                display: none;
+                width: 40px;
+                height: 24px;
+                position: absolute;
+                top: 38px;
+                right: 30px;
+                transform: rotate(0deg);
+                transition: .5s ease-in-out;
+                cursor: pointer;
+
+                @media screen and (max-width: 1300px) {
+                    display: block;
+                }
+                span {
+                    display: block;
+                    position: absolute;
+                    height: 3px;
+                    width: 100%;
+                    background: $white;
+                    border-radius: 9px;
+                    opacity: 1;
+                    left: 0;
+                    transform: rotate(0deg);
+                    transition: .25s ease-in-out;
+
+                    &:nth-child(1) {
+                        top: 0px;
+                    }
+                    &:nth-child(2), &:nth-child(3) {
+                        top: 10px;
+                    }
+                    &:nth-child(4) {
+                        top: 20px;
+                    }
+                }
+                &.open {
+                    span {
+                        &:nth-child(1) {
+                            top: 18px;
+                            width: 0%;
+                            left: 50%;
+                        }
+                        &:nth-child(2) {
+                            transform: rotate(45deg);
+                        }
+                        &:nth-child(3) {
+                            transform: rotate(-45deg);
+                        }
+                        &:nth-child(4) {
+                            top: 18px;
+                            width: 0%;
+                            left: 50%;
+                        }
+                    }
+                }
+            }
+            .navigation {
+                width: calc(100% - 530px);
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: flex-end;
+                align-items: center;
+
+                @media screen and (max-width: 1930px) {
+                    width: calc(100% - 25.907vw);
+                }
+                @media screen and (max-width: 1770px) {
+                    width: calc(100% - 17.797vw);
+                }
+                @media screen and (max-width: 1300px) {
+                    width: 100%;
+                    flex-direction: column-reverse;
+                    margin-top: 30px;
+                    border-top: 1px solid $white;
+                    padding-top: 40px;
+                }
+                nav {
+                    height: 100%;
+
+                    @media screen and (max-width: 1300px) {
+                        height: auto;
+                        width: 100%;
+                        padding-top: 45px;
+                    }
+                    ul {
+                        margin: 0px;
+                        padding: 0px;
+                        height: 100%;
+                        display: flex;
+                        align-items: center;
+
+                        @media screen and (max-width: 1300px) {
+                            height: auto;
+                            display: block;
+                        }
+                        li {
+                            list-style-type: none;
+                            height: 100%;
+                            display: flex;
+                            align-items: center;
+                            position: relative;
+                            
+                            @media screen and (max-width: 1300px) {
+                                height: auto;
+                                width: auto;
+                                justify-content: center;
+                                flex-wrap: wrap;
+                                overflow: hidden;
+                            }
+                            &:hover {
+                                a {
+                                    color: $red;
+
+                                    @media screen and (max-width: 1300px) {
+                                        color: $white;
+                                    }
+                                }
+                            }
+                            &.parent {
+                                @media screen and (max-width: 1300px) {
+                                    margin-left: 20px;
+                                }
+                                &:hover {
+                                    a {
+                                        &:before {
+                                            opacity: 1;
+                                            visibility: visible;
+                                        }
+                                        &:after {
+                                            color: $red;
+                                            transform: rotate(90deg);
+
+                                            @media screen and (max-width: 1300px) {
+                                                color: $white;
+                                                transform: none;
+                                            }
+                                        }
+                                    }
+                                    ul {
+                                        opacity: 1;
+                                        visibility: visible;
+                                    }
+                                }
+                                a {
+                                    &:before {
+                                        content: '';
+                                        width: calc(100% - 40px);
+                                        height: 10px;
+                                        border-radius: 5px;
+                                        background-color: $red;
+                                        position: absolute;
+                                        bottom: 0px;
+                                        left: 20px;
+                                        opacity: 0;
+                                        visibility: hidden;
+                                        transition: .2s ease-in-out;
+
+                                        @media screen and (max-width: 1300px) {
+                                            display: none;
+                                        }
+                                    }
+                                    &:after {
+                                        content: '\f105';
+                                        font-family: 'Font Awesome 5 Free';
+                                        font-weight: 900;
+                                        font-size: 20px;
+                                        display: inline-block;
+                                        margin-left: 10px;
+                                        color: $gray;
+                                        position: relative;
+                                        top: -1px;
+                                        transition: .2s ease-in-out;
+
+                                        @media screen and (max-width: 1300px) {
+                                            display: none;
+                                        }
+                                    }
+                                }
+                                .mobile-dropdown {
+                                    display: none;
+                                    border: none;
+                                    background-color: transparent;
+                                    padding: 0px;
+                                    width: 30px;
+                                    height: 30px;
+                                    position: relative;
+                                    top: -21px;
+                                    left: 10px;
+
+                                    @media screen and (max-width: 1300px) {
+                                        display: inline-block;
+                                    }
+                                    &:after {
+                                        content: '\f105';
+                                        font-family: 'Font Awesome 5 Free';
+                                        font-weight: 900;
+                                        font-size: 25px;
+                                        display: inline-block;
+                                        color: $white;
+                                        position: absolute;
+                                        top: 50%;
+                                        left: 50%;
+                                        transform: translate(-50%, -50%);
+                                        transition: .2s ease-in-out;
+                                    }
+                                    &.open {
+                                        &:after {
+                                            transform: translate(-50%, -50%) rotate(90deg);
+                                        }
+                                        + ul {
+                                            @media screen and (max-width: 1300px) {
+                                                max-height: 30em;
+                                                padding-bottom: 20px;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                            a {
+                                font-family: $bureau;
+                                font-size: 20px;
+                                line-height: 20px;
+                                color: $gray;
+                                text-decoration: none;
+                                height: calc(100% + 62px);
+                                padding: 0px 20px;
+                                display: flex;
+                                align-items: center;
+                                position: relative;
+
+                                @media screen and (max-width: 1930px) {
+                                    padding: 0px 15px;
+                                }
+                                @media screen and (max-width: 1770px) {
+                                    font-size: 18px;
+                                    line-height: 18px;
+                                    padding: 0px 13px;
+                                }
+                                @media screen and (max-width: 1300px) {
+                                    font-size: 25px;
+                                    line-height: 25px;
+                                    color: $white;
+                                    height: auto;
+                                    padding: 0px 0px 40px;
+                                }
+                            }
+                            ul {
+                                position: absolute;
+                                bottom: -30px;
+                                left: 50%;
+                                transform: translate(-50%, 100%);
+                                background-color: $white;
+                                display: block;
+                                min-width: 250px;
+                                height: auto;
+                                opacity: 0;
+                                visibility: hidden;
+                                transition: .2s ease-in-out;
+
+                                @media screen and (max-width: 1300px) {
+                                    position: relative;
+                                    bottom: auto !important;
+                                    left: auto;
+                                    transform: none;
+                                    background-color: transparent;
+                                    min-width: auto;
+                                    opacity: 1;
+                                    visibility: visible;
+                                    width: 100%;
+                                    max-height: 0em;
+                                    transition: .4s ease-in-out;
+                                }
+                                li {
+                                    height: auto;
+                                    border-bottom: 1px solid #D8D8D8;
+
+                                    @media screen and (max-width: 1300px) {
+                                        border-bottom: none;
+                                        margin-left: -20px;
+                                    }
+                                    a {
+                                        padding: 30px 35px;
+                                        display: block;
+                                        width: 100%;
+                                        color: $red;
+
+                                        @media screen and (max-width: 1300px) {
+                                            color: $white;
+                                            margin-bottom: 0px;
+                                            font-family: $lexend;
+                                            font-size: 16px;
+                                            line-height: 16px;
+                                            font-weight: 300;
+                                            text-align: center;
+                                            padding: 0px 0px 20px !important;
+                                        }
+                                        &:hover {
+                                            background-color: #efefef;
+
+                                            @media screen and (max-width: 1300px) {
+                                                background-color: transparent;
+                                            }
+                                        }
+                                        &:before {
+                                            display: none;
+                                        }
+                                        &:after {
+                                            display: none !important;
+                                        }
+                                    }
+                                    .mobile-dropdown {
+                                        display: none !important;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                .btn {
+                    margin: 0px 10px 0px 30px;
+
+                    @media screen and (max-width: 1930px) {
+                        margin: 0px 0px 0px 15px;
+                    }
+                    @media screen and (max-width: 1770px) {
+                        font-size: 18px;
+                        line-height: 18px;
+                        padding: 20px 25px 17px;
+                    }
+                    @media screen and (max-width: 1300px) {
+                        margin-left: 0px;
+                        background-color: $white;
+                        color: $red;
+                        font-size: 23px;
+                        line-height: 23px;
+                        padding: 20px 40px 17px;
+                        border: 3px solid $white;
+                        width: 100%;
+                        max-width: 280px;
+                    }
+                    &:hover {
+                        @media screen and (max-width: 1300px) {
+                            background-color: transparent;
+                            color: $white;
+                        }
+                    }
+                }
+            }
+            hr {
+                width: 100%;
+                height: 1px;
+                margin: 30px 0px 0px;
+                border: none;
+                background-color: #414042;
+
+                @media screen and (max-width: 1300px) {
+                    display: none;
+                }
+            }
+        }
+    }
+    .small-nav {
+        header {
+            .primary-header {
+                height: 101px;
+                padding-top: 20px;
+
+                @media screen and (max-width: 1300px) {
+                    //height: 99px;
+                    height: auto;
+                    padding-top: 25px;
+                }
+                .logo {
+                    width: 370px;
+                    height: 59px;
+
+                    @media screen and (max-width: 1770px) {
+                        width: 14.802vw;
+                    }
+                    @media screen and (max-width: 1300px) {
+                        width: 208px;
+                        height: 49px;
+                    }
+                    a {
+                        width: 250px;
+
+                        @media screen and (max-width: 1300px) {
+                            width: 208px;
+                            height: 49px;
+                        }
+                    }
+                }
+                .navigation {
+                    width: calc(100% - 370px);
+
+                    @media screen and (max-width: 1770px) {
+                        width: calc(100% - 14.802vw);
+                    }
+                    @media screen and (max-width: 1300px) {
+                        width: 100%;
+                    }
+                    nav {
+                        ul {
+                            li {
+                                a {
+                                    height: calc(100% + 42px);
+                                }
+                                ul {
+                                    bottom: -21px;
+
+                                    li {
+                                        a {
+                                            padding: 25px 35px;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                hr {
+                    margin-top: 20px;
+                }
+            }
+        }
+    }
+    .nav-open {
+        @media screen and (max-width: 1300px) {
+            overflow-y: hidden;
+        }
+        header {
+            @media screen and (max-width: 1300px) {
+                height: 100vh;
+            }
+            .header-container {    
+                @media screen and (max-width: 1300px) {
+                    overflow: auto;
+                }
+            }
+        }
+    }
+}

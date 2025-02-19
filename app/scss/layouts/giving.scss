@@ -1,0 +1,898 @@
+html {
+    body:not(.home) {
+        &.giving {
+            overflow-x: hidden;
+            
+            .hero {
+                @media screen and (max-width: $lg) {
+                    margin-bottom: 130px;
+                }
+                @media screen and (max-width: $md) {
+                    margin-bottom: 50px;
+                }
+                @media screen and (max-width: $sm) {
+                    margin-bottom: 30px;
+                }
+                &__text {
+                    margin-bottom: 0px;
+                }
+            }
+            .pmh {
+                padding-top: 150px;
+                position: relative;
+
+                @media screen and (max-width: $xl) {
+                    padding-top: 100px;
+                }
+                @media screen and (max-width: $lg) {
+                    padding-top: 130px;
+                    margin-top: -130px;
+                }
+                @media screen and (max-width: $sm) {
+                    margin-bottom: -40px;
+                }
+                &:before {
+                    content: '';
+                    width: 100%;
+                    height: 22.857vw;
+                    background-image: url('../img/catering-bg.svg');
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                    position: absolute;
+                    top: -3.616vw;
+                    left: 0px;
+                    z-index: -1;
+
+                    @media screen and (max-width: $md) {
+                        background-image: url('../img/catering-mobile.svg');
+                        height: 26.336vw;
+                        top: -8.475vw;
+                    }
+                }
+                &:after {
+                    content: '';
+                    width: 627px;
+                    height: 941px;
+                    background-image: url('../img/new-england-3.svg');
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                    position: absolute;
+                    top: 120px;
+                    left: 0px;
+                    z-index: -1;
+
+                    @media screen and (max-width: $md) {
+                        background-image: url('../img/new-england-2-mobile.svg');
+                        width: 291px;
+                        height: 548px;
+                        top: auto;
+                        bottom: -100px;
+                    }
+                }
+                .col-md-10 {
+                    @media screen and (max-width: 1500px) {
+                        margin-left: 5%;
+                        width: 90%;
+                    }
+                    .row {
+                        @media screen and (max-width: $lg) {
+                            flex-direction: column-reverse;
+                        }
+                    }
+                }
+                .row {
+                    align-items: center;
+                }
+                &__text {       
+                    position: relative;
+                       
+                    @media screen and (max-width: $md) {
+                        padding: 0px;
+                    }
+                    p {
+                        max-width: 543px;
+
+                        @media screen and (max-width: $lg) {
+                            max-width: none;
+                        }
+                    }
+                    h2 {
+                        @media screen and (max-width: $xl) {
+                            font-size: 6.25vw;
+                            letter-spacing: -.266vw;
+                        }
+                        @media screen and (max-width: $md) {
+                            font-size: 45px;
+                            letter-spacing: -1.92px;
+                        }
+                    }
+                    .btn {
+                        margin-top: 20px;
+                    }
+                }
+                &__images {
+                    @media screen and (max-width: 1500px) {
+                        width: 47vw;
+                        margin-left: auto;
+                    }
+                    @media screen and (max-width: $lg) {
+                        width: 100%;
+                        margin-left: 0px;
+                        margin-bottom: 110px;
+                        padding: 0px;
+                    }
+                    &__container {
+                        display: flex;
+                        flex-wrap: wrap;
+                        align-items: flex-end;
+
+                        @media screen and (max-width: $lg) {
+                            position: relative;
+                            transform: translateX(-50%);
+                            left: 50%;
+                            width: 464px;
+                        }
+                    }
+                    &__img {
+                        background-color: #F1F0F2;
+                        padding: 15px;
+                        box-shadow: 6px 6px 10px rgba($black, .2);
+                        display: inline-block;
+                        position: relative;
+
+                        @media screen and (max-width: $md) {
+                            padding: 10px;
+                        }
+                        &.--img-1 {
+                            width: 480px;
+                            transform: rotate(-8deg);
+
+                            @media screen and (max-width: 1920px) {
+                                width: 25vw;
+                            }
+                            @media screen and (max-width: $lg) {
+                                width: 286px;
+                                margin-right: -61px;
+                            }
+                        }
+                        &.--img-2 {
+                            width: 540px;
+                            margin-left: -200px;
+                            margin-bottom: -100px;                    
+                            transform: rotate(8deg);
+
+                            @media screen and (max-width: 1920px) {
+                                width: 28.125vw;
+                                margin-left: -10.417vw;
+                                margin-bottom: -5.208vw;
+                            }
+                            @media screen and (max-width: $lg) {
+                                width: 321px;
+                                margin-left: -82px;
+                                margin-bottom: -71px;
+                            }
+                            &:after {
+                                content: '';
+                                width: 2.857vw;
+                                height: 2.679vw;
+                                background-image: url('../img/glow.svg');
+                                background-size: cover;
+                                background-repeat: no-repeat;
+                                position: absolute;
+                                bottom: -2.3vw;
+                                right: -2.5vw;
+                                transform: rotate(90deg);
+
+                                @media screen and (max-width: $lg) {
+                                    display: none;
+                                }
+                            }
+                        }
+                        img {
+                            width: 100%;
+                        }
+                    }
+                    &__caption {
+                        width: 100%;
+                        margin-top: 130px;
+                        margin-left: 20px;
+                        position: relative;
+    
+                        @media screen and (max-width: $lg) {
+                            display: none;
+                        }
+                        &:after {
+                            content: '';
+                            width: 23px;
+                            height: 92px;
+                            background-image: url('../img/arrow-5.svg');
+                            background-size: cover;
+                            background-repeat: no-repeat;
+                            position: absolute;
+                            bottom: 50px;
+                            left: -40px;
+                        }
+                        .caption {
+                            display: inline-block;
+                            text-align: center;
+                        }
+                    }
+                }
+            }
+            .fundraising {
+                padding-top: 150px;
+                position: relative;
+
+                @media screen and (max-width: $lg) {
+                    padding-top: 130px;
+                    margin-bottom: -110px;
+                }
+                .col-md-10 {
+                    @media screen and (max-width: 1500px) {
+                        margin-left: 5%;
+                        width: 90%;
+                    }
+                    .row {
+                        @media screen and (max-width: $lg) {
+                            flex-direction: column-reverse;
+                        }
+                    }
+                }
+                .red-text {
+                    font-size: 22px;
+                    line-height: 30px;
+                    font-weight: bold;
+                    letter-spacing: -.43px;
+                    color: $red;
+                }
+                &__text {       
+                    position: relative;
+                    z-index: 1;
+                       
+                    @media screen and (max-width: $md) {
+                        padding: 0px;
+                    }
+                    &__container {
+                        max-width: 543px;
+                        margin-bottom: 40px;
+
+                        @media screen and (max-width: $lg) {
+                            max-width: none;
+                        }
+                        p {
+                            margin-bottom: 30px;
+                        }
+                    }
+                    h2 {
+                        @media screen and (max-width: $xl) {
+                            font-size: 6.25vw;
+                            letter-spacing: -.266vw;
+                        }
+                        @media screen and (max-width: $md) {
+                            font-size: 45px;
+                            letter-spacing: -1.92px;
+                        }
+                    }
+                    .accordion {
+                        margin-left: -80px;
+                        margin-right: -160px;
+                        position: relative;
+                        z-index: 2;
+
+                        @media screen and (max-width: 1500px) {
+                            margin-left: 0px;
+                        }
+                        @media screen and (max-width: $lg) {
+                            margin-right: 0px;
+                        }
+                    }
+                    &__note {
+                        margin-top: 30px;
+                        display: none;
+
+                        @media screen and (max-width: $lg) {
+                            display: block;
+                        }
+                    }
+                }
+                &__images {
+                    @media screen and (max-width: 1920px) {
+                        display: flex;
+                        justify-content: center;
+                    }
+                    @media screen and (max-width: 1500px) {
+                        width: 47vw;
+                        margin-left: auto;
+                    }
+                    @media screen and (max-width: $lg) {
+                        margin: 50px auto 60px;
+                        width: auto;
+                        display: block;
+                    }
+                    @media screen and (max-width: 650px) {
+                        width: 100%;
+                    }
+                    &__container {
+                        @media screen and (max-width: 1920px) {
+                            width: 39.063vw;
+                        }
+                        @media screen and (max-width: $lg) {
+                            position: relative;
+                            transform: translateX(-50%);
+                            left: 50%;
+                            width: 321px;
+                            display: flex;
+                            flex-wrap: wrap;
+                            align-items: baseline;
+                        }
+                    }
+                    &__img {
+                        background-color: #F1F0F2;
+                        padding: 15px;
+                        box-shadow: 6px 6px 10px rgba($black, .2);
+                        display: block;
+                        position: relative;
+                        width: 467px;
+                        margin-left: 230px;
+                        transform: rotate(11deg);
+
+                        @media screen and (max-width: 1920px) {
+                            width: 24.323vw;
+                            margin-left: 11.979vw;
+                        }
+                        @media screen and (max-width: $lg) {
+                            width: 321px;
+                            margin-left: 0px;
+                        }
+                        @media screen and (max-width: $md) {
+                            padding: 10px;
+                        }
+                        /*&.--img-1 {
+                            width: 543px;
+                            transform: rotate(-5deg);
+                            z-index: 1;
+
+                            @media screen and (max-width: 1920px) {
+                                width: 28.281vw;
+                            }
+                            @media screen and (max-width: $lg) {
+                                width: 326px;
+                                margin-right: -61px;
+                            }
+                        }
+                        &.--img-2 {
+                            width: 467px;
+                            margin-left: 230px;
+                            margin-top: -173px;
+                            transform: rotate(11deg);
+
+                            @media screen and (max-width: 1920px) {
+                                width: 24.323vw;
+                                margin-left: 11.979vw;
+                                margin-top: -9.010vw;
+                            }
+                            @media screen and (max-width: $lg) {
+                                width: 321px;
+                                margin-left: -82px;
+                                margin-top: -71px;
+                            }
+                        }*/
+                        img {
+                            width: 100%;
+                        }
+                    }
+                    &__text {
+                        max-width: 300px;
+                        margin-left: 210px;
+                        margin-top: 100px;
+
+                        @media screen and (max-width: 1920px) {
+                            margin-left: 10.938vw;
+                            margin-top: 5.208vw;
+                        }
+                        @media screen and (max-width: $lg) {
+                            display: none;
+                        }
+                        p {
+                            margin-bottom: 0px;
+                        }
+                    }
+                }
+            }
+            .jimmy-fund {
+                padding-top: 190px;
+                position: relative;
+
+                @media screen and (max-width: $lg) {
+                    padding-top: 130px;
+                    margin-bottom: -50px;
+                }
+                &:before {
+                    content: '';
+                    width: 588px;
+                    height: 1062px;
+                    background-image: url('../img/new-england-1.svg');
+                    background-size: cover;
+                    background-repeat: no-repeat;
+                    position: absolute;
+                    top: -280px;
+                    right: 0px;
+                    z-index: -1;
+
+                    @media screen and (max-width: $lg) {
+                        display: none;
+                    }
+                }
+                .container {
+                    max-width: 1820px;
+
+                    @media screen and (max-width: $lg) {
+                        width: 100%;
+                    }
+                }
+                .row {
+                    align-items: center;
+                    margin-bottom: 85px;
+
+                    @media screen and (max-width: $lg) {
+                        margin-left: 0px;
+                        margin-right: 0px;
+                        margin-bottom: 50px;
+                    }
+                }
+                .col-lg-7, .col-lg-5 {
+                    @media screen and (max-width: $lg) {
+                        padding-left: 5%;
+                        padding-right: 5%;
+                    }
+                }
+                &__images {
+                    @media screen and (max-width: $lg) {
+                        margin-top: 40px;
+                        margin-bottom: 60px;
+                    }
+                    @media screen and (max-width: $sm) {
+                        margin-top: 30px;
+                    }
+                    &__container {
+                        position: relative;
+
+                        @media screen and (max-width: $lg) {
+                            position: relative;
+                            transform: translateX(-50%);
+                            left: 50%;
+                            width: 490px;
+                            display: flex;
+                            flex-wrap: wrap;
+                            align-items: baseline;
+                        }
+                    }
+                    &__img {
+                        background-color: #F1F0F2;
+                        padding: 15px;
+                        box-shadow: 6px 6px 10px rgba($black, .2);
+                        display: inline-block;
+                        position: relative;
+
+                        @media screen and (max-width: $md) {
+                            padding: 10px;
+                        }
+                        &.--img-1 {
+                            width: 480px;
+                            transform: rotate(2deg);
+
+                            @media screen and (max-width: 1920px) {
+                                width: 25vw;
+                            }
+                            @media screen and (max-width: $lg) {
+                                width: 275px;
+                                transform: rotate(4deg);
+                            }
+                            &:after {
+                                content: '';
+                                width: 2.857vw;
+                                height: 2.679vw;
+                                background-image: url('../img/glow.svg');
+                                background-size: cover;
+                                background-repeat: no-repeat;
+                                position: absolute;
+                                top: -1.786vw;
+                                right: -2.232vw;
+
+                                @media screen and (max-width: $lg) {
+                                    display: none;
+                                }
+                            }
+                        }
+                        &.--img-2 {
+                            position: absolute;
+                            top: 219px;
+                            left: 293px;
+                            width: 540px;
+                            transform: rotate(-5deg);
+                            z-index: 1;
+
+                            @media screen and (max-width: 1920px) {
+                                top: 11.406vw;
+                                left: 15.260vw;
+                                width: 28.125vw;
+                            }
+                            @media screen and (max-width: $lg) {
+                                width: 275px;
+                                top: 50%;
+                                left: auto;
+                                right: 0px;
+                                transform: translateY(-50%) rotate(-5deg);
+                            }
+                        }
+                        &.--img-3 {
+                            width: 610px;
+                            margin-top: 24px;
+                            margin-left: 75px;
+                            transform: rotate(-3deg);
+
+                            @media screen and (max-width: 1920px) {
+                                width: 31.771vw;
+                                margin-top: 1.250vw;
+                                margin-left: 3.906vw;
+                            }
+                            @media screen and (max-width: $lg) {
+                                display: none;
+                            }
+                        }
+                        img {
+                            width: 100%;
+                        }
+                    }
+                }
+                &__text {
+                    position: relative;
+
+                    @media screen and (max-width: $xl) {
+                        padding: 0px;
+                    }
+                    &__container {
+                        max-width: 630px;
+
+                        @media screen and (max-width: $lg) {
+                            max-width: none;
+                        }
+                    }
+                    h2 {
+                        @media screen and (max-width: $xl) {
+                            font-size: 6.250vw;
+                            letter-spacing: -0.266vw;
+                        }
+                        @media screen and (max-width: $md) {
+                            font-size: 45px;
+                            letter-spacing: -1.92px;
+                        }
+                    }
+                    h3 {
+                        margin-top: 50px;
+                        padding-bottom: 0px;
+                        color: $red;
+
+                        &:after {
+                            display: none;
+                        }
+                    }
+                }
+                &__ambassador {
+                    position: relative;
+
+                    @media screen and (max-width: $lg) {
+                        padding: 0px 5%;
+                    }
+                    &:after {
+                        content: '';
+                        width: 466px;
+                        height: 516px;
+                        background-image: url('../img/pg-3.svg');
+                        background-repeat: no-repeat;
+                        background-size: cover;
+                        position: absolute;
+                        bottom: -316px;
+                        left: 0;
+                        z-index: -1;
+
+                        @media screen and (max-width: $lg) {
+                            background-image: url('../img/pg-mobile.svg');
+                            width: 260px;
+                            height: 327px;
+                            bottom: -220px;
+                            left: auto;
+                            right: 0px;
+                        }
+                    }
+                    .container {
+                        max-width: 1370px;
+                    }
+                    &__container {
+                        background-color: #F8F7F8;
+                        display: flex;
+                        align-items: center;
+                        box-shadow: 6px 6px 10px rgba($black, .1);
+
+                        @media screen and (max-width: $md) {
+                            flex-direction: column-reverse;
+                            background-color: transparent;
+                            box-shadow: none;
+                        }
+                    }
+                    &__text {
+                        padding: 100px 0px calc(100px - 1rem) 200px;
+                        margin-right: 160px;
+                        text-align: center;
+                        width: calc(100% - 486px);
+
+                        @media screen and (max-width: 1800px) {
+                            padding: 5.556vw 0px calc(5.556vw - 1rem) 11.111vw;
+                            margin-right: 8.889vw;
+                            width: calc(100% - 27vw);
+                        }
+                        @media screen and (max-width: $xl) {
+                            padding: 5.556vw 0px calc(5.556vw - 1rem) 5.556vw;
+                            margin-right: 5.556vw;
+                        }
+                        @media screen and (max-width: $md) {
+                            width: 100%;
+                            padding: 50px 50px calc(50px - 1rem);
+                            margin-right: 0px;
+                            background-color: #F8F7F8;
+                            box-shadow: 6px 6px 10px rgba($black, .1);
+                        }
+                        @media screen and (max-width: $sm) {
+                            padding: 30px 30px calc(30px - 1rem);
+                        }
+                        .section-label {
+                            @media screen and (max-width: $sm) {
+                                margin-bottom: 20px;
+                            }
+                            &:after {
+                                display: none;
+                            }
+                        }
+                        h3 {
+                            &:after {
+                                left: 50%;
+                                transform: translateX(-50%);
+                                background-color: $gray;
+                            }
+                        }
+                    }
+                    &__img {
+                        background-color: #F1F0F2;
+                        padding: 15px;
+                        box-shadow: 6px 6px 10px rgba($black, .2);
+                        display: inline-block;
+                        position: relative;
+                        width: 486px;
+                        transform: rotate(9deg);
+                        margin-right: -140px;
+
+                        @media screen and (max-width: 1800px) {
+                            width: 27vw;
+                            margin-right: -3.5vw;
+                        }
+                        @media screen and (max-width: $xl) {
+                            width: 35vw;
+                            margin-right: -1.5vw;
+                        }
+                        @media screen and (max-width: $md) {
+                            padding: 10px;
+                            transform: rotate(7deg);
+                            width: 350px;
+                            margin-bottom: 70px;
+                            margin-right: 0px;
+                        }
+                        img {
+                            width: 100%;
+                        }
+                        &__caption {
+                            position: absolute;
+                            bottom: -45px;
+                            left: 0px;
+                            width: 100%;
+                            font-size: 22px;
+                            line-height: 30px;
+                            font-weight: bold;
+                            letter-spacing: -.43px;
+                            color: $red;
+                            text-align: center;
+
+                            @media screen and (max-width: $md) {
+                                transform: rotate(-7deg);
+                            }
+                        }
+                    }
+                }
+            }
+            .fire-safety {
+                padding-top: 190px;
+                padding-bottom: 13vw;
+                position: relative;
+
+                @media screen and (max-width: $lg) {
+                    padding-top: 130px;
+                }
+                @media screen and (max-width: $md) {
+                    padding-bottom: 30vw;
+                }
+                &:after {
+                    content: '';
+                    width: 100%;
+                    height: 16.384vw;
+                    background-image: url('../img/order-callout-bg.svg');
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                    position: absolute;
+                    bottom: -1.339vw;
+                    left: 0px;
+                    z-index: -1;
+
+                    @media screen and (max-width: $md) {
+                        background-image: url('../img/menu-bg-2-mobile.svg');
+                        height: 22.034vw;
+                        bottom: 0px;
+                    }
+                }
+                .col-md-10 {
+                    @media screen and (max-width: 1500px) {
+                        margin-left: 5%;
+                        width: 90%;
+                    }
+                    .row {
+                        @media screen and (max-width: $lg) {
+                            flex-direction: column-reverse;
+                        }
+                    }
+                }
+                .row {
+                    align-items: center;
+                }
+                &__text {       
+                    position: relative;
+                       
+                    @media screen and (max-width: $md) {
+                        padding: 0px;
+                    }
+                    &__container {
+                        max-width: 570px;
+
+                        @media screen and (max-width: $lg) {
+                            max-width: none;
+                        }
+                    }
+                    h2 {
+                        max-width: 570px;
+                        
+                        @media screen and (max-width: $xl) {
+                            font-size: 6.25vw;
+                            letter-spacing: -.266vw;
+                        }
+                        @media screen and (max-width: $lg) {
+                            max-width: none;
+                        }
+                        @media screen and (max-width: $md) {
+                            font-size: 45px;
+                            letter-spacing: -1.92px;
+                        }
+                    } 
+                }
+                &__images {
+                    @media screen and (max-width: 1500px) {
+                        width: 47vw;
+                        margin-left: auto;
+                    }
+                    @media screen and (max-width: $lg) {
+                        width: 100%;
+                        margin-left: 0px;
+                        margin-bottom: 50px;
+                        padding: 0px;
+                    }
+                    @media screen and (max-width: $sm) {
+                        margin-bottom: 40px;
+                    }
+                    &__container {
+                        display: flex;
+                        flex-wrap: wrap;
+                        align-items: flex-end;
+
+                        @media screen and (max-width: $lg) {
+                            position: relative;
+                            transform: translateX(-50%);
+                            left: 50%;
+                            width: 464px;
+                            margin-bottom: 90px;
+                        }
+                    }
+                    &__img {
+                        background-color: #F1F0F2;
+                        padding: 15px;
+                        box-shadow: 6px 6px 10px rgba($black, .2);
+                        display: inline-block;
+                        position: relative;
+
+                        @media screen and (max-width: $md) {
+                            padding: 10px;
+                        }
+                        &.--img-1 {
+                            width: 480px;
+                            transform: rotate(-8deg);
+
+                            @media screen and (max-width: 1920px) {
+                                width: 25vw;
+                            }
+                            @media screen and (max-width: $lg) {
+                                width: 286px;
+                                margin-right: -61px;
+                            }
+                        }
+                        &.--img-2 {
+                            width: 540px;
+                            margin-left: -200px;
+                            margin-bottom: -100px;                    
+                            transform: rotate(8deg);
+
+                            @media screen and (max-width: 1920px) {
+                                width: 28.125vw;
+                                margin-left: -10.417vw;
+                                margin-bottom: -5.208vw;
+                            }
+                            @media screen and (max-width: $lg) {
+                                width: 321px;
+                                margin-left: -82px;
+                                margin-bottom: -71px;
+                            }
+                            &:after {
+                                content: '';
+                                width: 2.857vw;
+                                height: 2.679vw;
+                                background-image: url('../img/glow.svg');
+                                background-size: cover;
+                                background-repeat: no-repeat;
+                                position: absolute;
+                                bottom: -2.3vw;
+                                right: -2.5vw;
+                                transform: rotate(90deg);
+
+                                @media screen and (max-width: $lg) {
+                                    display: none;
+                                }
+                            }
+                        }
+                        img {
+                            width: 100%;
+                        }
+                    }
+                    &__caption {
+                        width: 100%;
+                        margin-top: 150px;
+                        margin-left: 150px;
+                        position: relative;
+    
+                        @media screen and (max-width: $lg) {
+                            display: none;
+                        }
+                        &:after {
+                            content: '';
+                            width: 23px;
+                            height: 92px;
+                            background-image: url('../img/arrow-5.svg');
+                            background-size: cover;
+                            background-repeat: no-repeat;
+                            position: absolute;
+                            bottom: 50px;
+                            left: -40px;
+                        }
+                        .caption {
+                            display: inline-block;
+                            text-align: center;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,67 @@
+html {
+    .text-only {
+        &__section {
+            padding: 120px 0px 10vw;
+            position: relative;
+            
+            @media screen and (max-width: $xl) {
+                padding-top: 90px;
+            }
+            @media screen and (max-width: $md) {
+                padding: 60px 0px 25vw;
+            }
+            &:after {
+                content: '';
+                width: 100%;
+                height: 16.384vw;
+                background-image: url('../img/order-callout-bg.svg');
+                background-repeat: no-repeat;
+                background-size: cover;
+                position: absolute;
+                bottom: -1.339vw;
+                left: 0px;
+                z-index: -1;
+
+                @media screen and (max-width: $md) {
+                    background-image: url('../img/menu-bg-2-mobile.svg');
+                    height: 22.034vw;
+                    bottom: 0px;
+                }
+            }
+            h1 {
+                margin-bottom: 40px;
+
+                @media screen and (max-width: $xl) {
+                    font-size: 80px;
+                    line-height: 75px;
+                    letter-spacing: -3px;
+                }
+                @media screen and (max-width: $md) {
+                    font-size: 55px;
+                    line-height: 50px;
+                    letter-spacing: -2.34px;
+                    margin-bottom: 30px;
+                }
+            }
+            h2 {
+                @extend h3;
+                padding-bottom: 0px;
+                margin-top: 60px;
+                color: $red;
+                
+                &:after {
+                    display: none;
+                }
+            }
+            p, ul, ol {
+                margin-bottom: 30px;
+            }
+            strong {
+                font-weight: bold;
+            }
+            a {
+                font-weight: bold;
+            }
+        }
+    }
+}
